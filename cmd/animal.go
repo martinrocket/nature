@@ -19,7 +19,7 @@ func GetLion() animal {
 	l := animal{}
 	l.active = true
 	l.house = "Africa"
-	l.species = "cat"
+	l.species = "Cat"
 	l.name = "Lion"
 	l.life = 10
 	l.strength = 10

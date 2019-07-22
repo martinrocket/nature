@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"strconv"
 	"strings"
 )
 
@@ -37,9 +38,12 @@ func buildBox(x int, y int, a animal) {
 	blank := b.box1().hLine + strings.Repeat(b.box1().space, x) + b.box1().hLine
 
 	fmt.Print(top + "\n")
+	z := (len(a.name) + len("Life:") + len(strconv.Itoa(a.life)))
+	s := strconv.Itoa(len(a.name) + len("Life:") + len(strconv.Itoa(a.life)))
+	fmt.Print(middleLeftJustify(x, s))
 
-	fmt.Print(middleLeftJustify(x, (a.name)))
-	fmt.Print(middleLeftJustify(x, (a.house + ", " + a.species)))
+	fmt.Print(middleLeftJustify(x, (a.name + strings.Repeat(" ", z) + "Life:" + strconv.Itoa(a.life))))
+	fmt.Print(middleLeftJustify(x, ("House:" + a.house + ", " + "Species:" + a.species)))
 
 	fmt.Print(blank + "\n")
 	fmt.Print(bottom + "\n")
