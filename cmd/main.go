@@ -9,6 +9,6 @@ func main() {
 	fmt.Println("...running nature.")
 	a := GetLion()
 	PAnimal(a)
-	buildBox(40, 40, a)
+	buildCard(30, 40, a)
 
 }
