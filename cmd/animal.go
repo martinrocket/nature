@@ -3,8 +3,8 @@ package main
 import "fmt"
 
 type animal struct {
-	active   bool
-	house    string
+	active   bool   `json: Active"`
+	house    string `json: "House"`
 	species  string
 	name     string
 	life     int
