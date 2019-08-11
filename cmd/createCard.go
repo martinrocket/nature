@@ -14,7 +14,7 @@ const hLine = "│"
 const bRight = "┘"
 const bLeft = "└"
 const bl = " "
-const cardWidth = 50
+const cardWidth = 40
 
 func createCard(a Animal) {
 
@@ -38,16 +38,20 @@ func bottom() {
 func content(a Animal) {
 	fields := reflect.TypeOf(a)
 	values := reflect.ValueOf(a)
-	for i := 0; i < values.Type().NumField(); i++ {
-		field := fields.Field(i)
-		value := values.Field(i)
-		s := field.Name
-		v := fmt.Sprintf("%v", value)
-		l := len(s) + len(": ") + len(fmt.Sprintf("%v", value))
+	for i := 0; i < values.Type().NumField(); i = i + 2 {
+		field1 := fields.Field(i)
+		field2 := fields.Field(i + 1)
+		value1 := values.Field(i)
+		value2 := values.Field(i + 1)
+		s1 := field1.Name
+		s2 := field2.Name
+		v1 := fmt.Sprintf("%v", value1)
+		v2 := fmt.Sprintf("%v", value2)
+		l := len(s1) + len(": ") + len(fmt.Sprintf("%v", value1)) + len(s2) + len(": ") + len(fmt.Sprintf("%v", value2)) + 1
 
 		//fmt.Print(s, ": ", value, " ", l, "\n")
 
-		fmt.Print(hLine + bl + field.Name + ": " + v + (strings.Repeat(bl, (cardWidth - l - 1))) + hLine + "\n")
+		fmt.Print(hLine + bl + field1.Tag.Get("json") + ": " + v1 + (strings.Repeat(bl, (cardWidth - l - 1))) + field2.Tag.Get("json") + ": " + v2 + bl + hLine + "\n")
 
 		//fmt.Printf((val.Type().Field(i).Tag.Get("json")) + "\n")
 	}

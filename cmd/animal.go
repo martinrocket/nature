@@ -4,9 +4,9 @@ import "fmt"
 
 type Animal struct {
 	Active   bool   `json:"active"`
+	Name     string `json:"name"`
 	House    string `json:"house"`
 	Species  string `json:"species"`
-	Name     string `json:"name"`
 	Life     int    `json:"life"`
 	Strength int    `json:"strength"`
 	Speed    int    `json:"speed"`
