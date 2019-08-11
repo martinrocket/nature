@@ -2,35 +2,35 @@ package main
 
 import "fmt"
 
-type animal struct {
-	active   bool   `json: Active"`
-	house    string `json: "House"`
-	species  string
-	name     string
-	life     int
-	strength int
-	speed    int
-	lethal   int
-	flight   bool
-	swim     bool
+type Animal struct {
+	Active   bool   `json:"active"`
+	House    string `json:"house"`
+	Species  string `json:"species"`
+	Name     string `json:"name"`
+	Life     int    `json:"life"`
+	Strength int    `json:"strength"`
+	Speed    int    `json:"speed"`
+	Lethal   int    `json:"lethal"`
+	Flight   bool   `json:"flight"`
+	Swim     bool   `json:"swim"`
 }
 
-func GetLion() animal {
-	l := animal{}
-	l.active = true
-	l.house = "Africa"
-	l.species = "Cat"
-	l.name = "Lion"
-	l.life = 10
-	l.strength = 10
-	l.speed = 8
-	l.lethal = 10
-	l.flight = false
-	l.swim = false
+func GetLion() Animal {
+	l := Animal{}
+	l.Active = true
+	l.House = "Africa"
+	l.Species = "Cat"
+	l.Name = "Lion"
+	l.Life = 10
+	l.Strength = 10
+	l.Speed = 8
+	l.Lethal = 10
+	l.Flight = false
+	l.Swim = false
 	return l
 }
 
-func PAnimal(a animal) {
-	fmt.Printf("Name: %v \n Information: %+v \n", a.name, a)
+func PAnimal(a Animal) {
+	fmt.Printf("Name: %v \n Information: %+v \n", a.Name, a)
 
 }
