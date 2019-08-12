@@ -4,14 +4,11 @@ import (
 	"bufio"
 	"fmt"
 	"os"
-	"os/exec"
 )
 
 func main() {
-	c := exec.Command("cmd", "/c", "cls")
-	c.Stdout = os.Stdout
-	c.Run()
-	//clearScreen()
+
+	clearScreen()
 	fmt.Println("...running nature.")
 	scanner := bufio.NewScanner(os.Stdin)
 	for {
