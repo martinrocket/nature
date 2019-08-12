@@ -3,8 +3,8 @@ package main
 import "fmt"
 
 type Animal struct {
-	Active   bool   `json:"active"`
 	Name     string `json:"name"`
+	Active   bool   `json:"active"`
 	House    string `json:"house"`
 	Species  string `json:"species"`
 	Life     int    `json:"life"`
@@ -28,6 +28,26 @@ func GetLion() Animal {
 	l.Flight = false
 	l.Swim = false
 	return l
+}
+
+func GetAfricanDog() Animal {
+	l := Animal{}
+	l.Active = true
+	l.House = "Africa"
+	l.Species = "Dog"
+	l.Name = "African Dog"
+	l.Life = 10
+	l.Strength = 5
+	l.Speed = 5
+	l.Lethal = 5
+	l.Flight = false
+	l.Swim = false
+	return l
+}
+
+func GetThomGaz() Animal {
+	return Animal{"Thompson's Gazelle", true, "Africa", "Bovidea", 10, 3, 10, 0, false, false}
+
 }
 
 func PAnimal(a Animal) {
