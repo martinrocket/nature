@@ -1,9 +1,8 @@
 package main
 
-import "fmt"
-
 type Animal struct {
 	Name     string `json:"name"`
+	Abr      string `json:"abr"`
 	Active   bool   `json:"active"`
 	House    string `json:"house"`
 	Species  string `json:"species"`
@@ -15,12 +14,19 @@ type Animal struct {
 	Swim     bool   `json:"swim"`
 }
 
+func AnimalList() []string {
+	var list []string
+	return append(list, (GetLion().Abr + ") " + GetLion().Name), (GetAfricanDog().Abr + ") " + GetAfricanDog().Name), (GetThomGaz().Abr + ") " + GetThomGaz().Name))
+
+}
+
 func GetLion() Animal {
 	l := Animal{}
 	l.Active = true
 	l.House = "Africa"
 	l.Species = "Cat"
 	l.Name = "Lion"
+	l.Abr = "l"
 	l.Life = 10
 	l.Strength = 10
 	l.Speed = 8
@@ -36,6 +42,7 @@ func GetAfricanDog() Animal {
 	l.House = "Africa"
 	l.Species = "Dog"
 	l.Name = "African Dog"
+	l.Abr = "d"
 	l.Life = 10
 	l.Strength = 5
 	l.Speed = 5
@@ -46,11 +53,6 @@ func GetAfricanDog() Animal {
 }
 
 func GetThomGaz() Animal {
-	return Animal{"Thompson's Gazelle", true, "Africa", "Bovidea", 10, 3, 10, 0, false, false}
-
-}
-
-func PAnimal(a Animal) {
-	fmt.Printf("Name: %v \n Information: %+v \n", a.Name, a)
+	return Animal{"Thompson's Gazelle", "tg", true, "Africa", "Bovidea", 10, 3, 10, 0, false, false}
 
 }

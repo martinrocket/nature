@@ -12,6 +12,11 @@ func main() {
 	fmt.Println("...running nature.")
 	scanner := bufio.NewScanner(os.Stdin)
 	for {
+		fmt.Println("Selection of Animals:")
+		l := AnimalList()
+		for i := range l {
+			fmt.Println(l[i])
+		}
 		fmt.Print("Enter Text: ")
 		scanner.Scan()
 		text := scanner.Text()
@@ -27,6 +32,8 @@ func main() {
 			createCard(GetAfricanDog())
 		case "tg":
 			createCard(GetThomGaz())
+		case "json":
+			writeJson()
 		default:
 			break
 		}
