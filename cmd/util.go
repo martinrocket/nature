@@ -9,7 +9,7 @@ func clearScreen() {
 	c := exec.Command("clear")
 	c.Stdout = os.Stdout
 	c.Run()
-	w := exec.Command("clr")
+	w := exec.Command("cls")
 	w.Stdout = os.Stdout
 	w.Run()
 
