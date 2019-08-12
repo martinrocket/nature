@@ -13,9 +13,7 @@ func main() {
 	scanner := bufio.NewScanner(os.Stdin)
 	for {
 		fmt.Print("Enter Text: ")
-		// Scans a line from Stdin(Console)
 		scanner.Scan()
-		// Holds the string that scanned
 		text := scanner.Text()
 		if len(text) != 0 {
 			fmt.Println(text)
@@ -25,18 +23,14 @@ func main() {
 			os.Exit(0)
 		case "l":
 			createCard(GetLion())
+		case "d":
+			createCard(GetAfricanDog())
+		case "tg":
+			createCard(GetThomGaz())
 		default:
 			break
 		}
 
 	}
-
-	l := GetLion()
-	d := GetAfricanDog()
-	tm := GetThomGaz()
-	//PAnimal(a)
-	createCard(l)
-	createCard(d)
-	createCard(tm)
 
 }
