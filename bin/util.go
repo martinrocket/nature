@@ -1,6 +1,7 @@
 package main
 
 import (
+	"log"
 	"os"
 	"os/exec"
 	"runtime"
@@ -20,6 +21,13 @@ func clearScreen() {
 		cmd := exec.Command("cmd", "/c", "cls") //Windows example, its tested
 		cmd.Stdout = os.Stdout
 		cmd.Run()
+	}
+
+}
+
+func checkErr(e error) {
+	if e != nil {
+		log.Printf(" Error here %v /n", e)
 	}
 
 }

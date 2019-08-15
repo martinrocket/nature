@@ -1,0 +1,13 @@
+{
+	"name": "African Dog",
+	"abr": "d",
+	"active": true,
+	"house": "Africa",
+	"species": "Dog",
+	"life": 10,
+	"strength": 5,
+	"speed": 5,
+	"lethal": 5,
+	"flight": false,
+	"swim": false
+}

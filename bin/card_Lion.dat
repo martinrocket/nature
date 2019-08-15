@@ -1,0 +1,13 @@
+{
+	"name": "Lion",
+	"abr": "l",
+	"active": true,
+	"house": "Africa",
+	"species": "Cat",
+	"life": 10,
+	"strength": 9,
+	"speed": 8,
+	"lethal": 10,
+	"flight": false,
+	"swim": false
+}

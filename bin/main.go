@@ -17,6 +17,7 @@ func main() {
 		for i := range l {
 			fmt.Println(l[i])
 		}
+		fmt.Println("c) Read in Animal Cards")
 		fmt.Print("Enter Text: ")
 		scanner.Scan()
 		text := scanner.Text()
@@ -28,12 +29,15 @@ func main() {
 			os.Exit(0)
 		case "l":
 			createCard(GetLion())
+			animalMenu(GetLion())
 		case "d":
 			createCard(GetAfricanDog())
+			animalMenu(GetAfricanDog())
 		case "tg":
 			createCard(GetThomGaz())
-		case "json":
-			writeJson()
+			animalMenu(GetThomGaz())
+		case "c":
+			readCards()
 		default:
 			break
 		}

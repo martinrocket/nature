@@ -28,7 +28,7 @@ func GetLion() Animal {
 	l.Name = "Lion"
 	l.Abr = "l"
 	l.Life = 10
-	l.Strength = 10
+	l.Strength = 9
 	l.Speed = 8
 	l.Lethal = 10
 	l.Flight = false

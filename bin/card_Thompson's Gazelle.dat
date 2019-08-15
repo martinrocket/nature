@@ -1,0 +1,13 @@
+{
+	"name": "Thompson's Gazelle",
+	"abr": "tg",
+	"active": true,
+	"house": "Africa",
+	"species": "Bovidea",
+	"life": 10,
+	"strength": 3,
+	"speed": 10,
+	"lethal": 0,
+	"flight": false,
+	"swim": false
+}
