@@ -19,6 +19,7 @@ func main() {
 		for i := range l {
 			fmt.Println(l[i])
 		}
+		fmt.Println("x) Exit")
 		fmt.Print("Enter Text: ")
 		scanner.Scan()
 		text := scanner.Text()
@@ -34,21 +35,6 @@ func main() {
 				os.Exit(0)
 			}
 		}
-		// switch text {
-		// case "x":
-		// 	os.Exit(0)
-		// case "l":
-		// 	createCard(GetLion())
-		// 	animalMenu(GetLion())
-		// case "d":
-		// 	createCard(GetAfricanDog())
-		// 	animalMenu(GetAfricanDog())
-		// case "tg":
-		// 	createCard(GetThomGaz())
-		// 	animalMenu(GetThomGaz())
-		// default:
-		// 	break
-		// }
 
 	}
 
