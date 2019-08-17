@@ -6,11 +6,11 @@ import (
 	"strings"
 )
 
-const vLine = "─"
+const hLine = "─"
 const uRight = "┐"
 const uLeft = "┌"
 const space = " "
-const hLine = "│"
+const vLine = "│"
 const bRight = "┘"
 const bLeft = "└"
 const bl = " "
@@ -24,17 +24,17 @@ func createCard(a Animal) {
 }
 
 func top() {
-	fmt.Print(uLeft + strings.Repeat(vLine, cardWidth) + uRight + "\n")
+	fmt.Print(uLeft + strings.Repeat(hLine, cardWidth) + uRight + "\n")
 }
 func bottom() {
-	fmt.Print(bLeft + strings.Repeat(vLine, cardWidth) + bRight + "\n")
+	fmt.Print(bLeft + strings.Repeat(hLine, cardWidth) + bRight + "\n")
 }
 
 func content(a Animal) {
 	fields := reflect.TypeOf(a)
 	values := reflect.ValueOf(a)
 	l := len(fmt.Sprintf("%v", values.Field(0)))
-	fmt.Print(hLine + bl + fmt.Sprintf("%v", values.Field(0)) + (strings.Repeat(bl, (cardWidth - l - 1))) + hLine + "\n")
+	fmt.Print(vLine + bl + fmt.Sprintf("%v", values.Field(0)) + (strings.Repeat(bl, (cardWidth - l - 1))) + vLine + "\n")
 	for i := 1; i < values.Type().NumField(); i = i + 2 {
 		if i == (values.Type().NumField() - 1) {
 			break
@@ -48,7 +48,8 @@ func content(a Animal) {
 		v1 := fmt.Sprintf("%v", value1)
 		v2 := fmt.Sprintf("%v", value2)
 		l := len(s1) + len(": ") + len(fmt.Sprintf("%v", value1)) + len(s2) + len(": ") + len(fmt.Sprintf("%v", value2)) + 1
-		fmt.Print(hLine + bl + field1.Tag.Get("json") + ": " + v1 + (strings.Repeat(bl, (cardWidth - l - 1))) + field2.Tag.Get("json") + ": " + v2 + bl + hLine + "\n")
+		fmt.Print(vLine + bl + field1.Tag.Get("json") + ": " + v1 + (strings.Repeat(bl, (cardWidth - l - 1))) + field2.Tag.Get("json") + ": " + v2 + bl + vLine + "\n")
 
 	}
+
 }

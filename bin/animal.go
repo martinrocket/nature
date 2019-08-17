@@ -14,45 +14,51 @@ type Animal struct {
 	Swim     bool   `json:"swim"`
 }
 
-func AnimalList() []string {
+type Animals struct {
+	All []Animal `json:"all animals"`
+}
+
+func AnimalList(A []Animal) []string {
 	var list []string
-	return append(list, (GetLion().Abr + ") " + GetLion().Name), (GetAfricanDog().Abr + ") " + GetAfricanDog().Name), (GetThomGaz().Abr + ") " + GetThomGaz().Name))
-
+	for i := range A {
+		list = append(list, (A[i].Abr + ") " + A[i].Name))
+	}
+	return list
 }
 
-func GetLion() Animal {
-	l := Animal{}
-	l.Active = true
-	l.House = "Africa"
-	l.Species = "Cat"
-	l.Name = "Lion"
-	l.Abr = "l"
-	l.Life = 10
-	l.Strength = 9
-	l.Speed = 8
-	l.Lethal = 10
-	l.Flight = false
-	l.Swim = false
-	return l
-}
+// func GetLion() Animal {
+// 	l := Animal{}
+// 	l.Active = true
+// 	l.House = "Africa"
+// 	l.Species = "Cat"
+// 	l.Name = "Lion"
+// 	l.Abr = "l"
+// 	l.Life = 10
+// 	l.Strength = 9
+// 	l.Speed = 8
+// 	l.Lethal = 10
+// 	l.Flight = false
+// 	l.Swim = false
+// 	return l
+// }
 
-func GetAfricanDog() Animal {
-	l := Animal{}
-	l.Active = true
-	l.House = "Africa"
-	l.Species = "Dog"
-	l.Name = "African Dog"
-	l.Abr = "d"
-	l.Life = 10
-	l.Strength = 5
-	l.Speed = 5
-	l.Lethal = 5
-	l.Flight = false
-	l.Swim = false
-	return l
-}
+// func GetAfricanDog() Animal {
+// 	l := Animal{}
+// 	l.Active = true
+// 	l.House = "Africa"
+// 	l.Species = "Dog"
+// 	l.Name = "African Dog"
+// 	l.Abr = "d"
+// 	l.Life = 10
+// 	l.Strength = 5
+// 	l.Speed = 5
+// 	l.Lethal = 5
+// 	l.Flight = false
+// 	l.Swim = false
+// 	return l
+// }
 
-func GetThomGaz() Animal {
-	return Animal{"Thompson's Gazelle", "tg", true, "Africa", "Bovidea", 10, 3, 10, 0, false, false}
+// func GetThomGaz() Animal {
+// 	return Animal{"Thompson's Gazelle", "tg", true, "Africa", "Bovidea", 10, 3, 10, 0, false, false}
 
-}
+// }

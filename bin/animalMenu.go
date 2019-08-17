@@ -22,6 +22,7 @@ func animalMenu(a Animal) {
 		}
 		switch text {
 		case "x":
+			clearScreen()
 			return
 		case "a":
 			createCard(a)

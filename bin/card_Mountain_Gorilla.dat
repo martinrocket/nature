@@ -1,0 +1,13 @@
+{
+	"name": "Mountain Gorilla",
+	"abr": "gm",
+	"active": true,
+	"house": "Africa",
+	"species": "primate",
+	"life": 10,
+	"strength": 10,
+	"speed": 3,
+	"lethal": 6,
+	"flight": false,
+	"swim": false
+}

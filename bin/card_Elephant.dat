@@ -1,0 +1,13 @@
+{
+	"name": "Elephant",
+	"abr": "e",
+	"active": true,
+	"house": "Africa",
+	"species": "Elephantidae",
+	"life": 10,
+	"strength": 10,
+	"speed": 6,
+	"lethal": 7,
+	"flight": false,
+	"swim": false
+}
