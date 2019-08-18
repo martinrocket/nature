@@ -10,7 +10,7 @@ func main() {
 
 	clearScreen()
 	fmt.Println("...running nature.")
-	scanner := bufio.NewScanner(os.Stdin)
+	scanner := bufio.NewScanner(os.Stdin) // Scans in Text for user input
 	for {
 		gameStatus()
 		fmt.Println("Selection of Animals:")
@@ -30,6 +30,11 @@ func main() {
 			if text == A[i].Abr {
 				createCard(A[i])
 				animalMenu(A[i])
+
+			} else if text == "p" {
+				p := players()
+				fmt.Println(p)
+				break
 
 			} else if text == "x" {
 				os.Exit(0)

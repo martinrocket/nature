@@ -27,7 +27,7 @@ func animalMenu(a Animal) {
 		case "a":
 			createCard(a)
 		case "b":
-			writeJson(a)
+			writeJSON(a)
 		default:
 			break
 		}

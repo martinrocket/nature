@@ -8,7 +8,7 @@ import (
 	"os"
 )
 
-func writeJson(a Animal) {
+func writeJSON(a Animal) {
 	d, err := json.MarshalIndent(a, "", "\t")
 	if err != nil {
 		log.Printf("Error marshalling %v \n", err)
