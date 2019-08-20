@@ -6,19 +6,23 @@ import (
 	"os"
 )
 
+var PP []player
+
 func main() {
 
 	clearScreen()
 	fmt.Println("...running nature.")
 	scanner := bufio.NewScanner(os.Stdin) // Scans in Text for user input
 	for {
-		gameStatus()
+
+		gameStatus(PP)
 		fmt.Println("Selection of Animals:")
 		A := readCards()
 		l := AnimalList(A)
 		for i := range l {
 			fmt.Println(l[i])
 		}
+		fmt.Println("p) Player")
 		fmt.Println("x) Exit")
 		fmt.Print("Enter Text: ")
 		scanner.Scan()
@@ -33,7 +37,8 @@ func main() {
 
 			} else if text == "p" {
 				p := players()
-				fmt.Println(p)
+
+				PP = append(PP, p)
 				break
 
 			} else if text == "x" {

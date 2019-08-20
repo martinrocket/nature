@@ -7,18 +7,25 @@ import (
 
 const gameWidth = 60
 
-func gameStatus() {
+func gameStatus(p []player) {
 	gameTop()
-	gameContent()
+	gameContent(p)
 	gameBlank()
 	gameBottom()
+	fmt.Println(p)
 
 }
 
-func gameContent() {
+func gameContent(p []player) {
 	l := len(fmt.Sprintf("%v", "Game Status"))
-	fmt.Print(vLine + bl + fmt.Sprintf("%v", "Game Status") + (strings.Repeat(bl, (gameWidth - l - 1))) + vLine + "\n")
 
+	fmt.Print(vLine + bl + fmt.Sprintf("%v", "Game Status") + (strings.Repeat(bl, (gameWidth - l - 1))) + vLine + "\n")
+	for i := range p {
+		l2 := len((p[i].Name + " " + p[i].Continent.Name))
+		name := p[i].Name + " " + p[i].Continent.Name
+		fmt.Print(vLine + bl + fmt.Sprintf("%v", name) + (strings.Repeat(bl, (gameWidth - l2 - 1))) + vLine + "\n")
+
+	}
 }
 
 func gameTop() {

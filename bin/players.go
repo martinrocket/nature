@@ -14,6 +14,7 @@ type player struct {
 
 func players() player {
 	p := player{}
+
 	scanner := bufio.NewScanner(os.Stdin) // Scans in Text for user input
 	fmt.Print("Enter your name: \n")
 	scanner.Scan()
@@ -44,7 +45,6 @@ func players() player {
 		break
 	}
 
-	fmt.Println(p)
 	return p
 
 }
