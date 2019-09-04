@@ -43,7 +43,16 @@ func players() player {
 		p.Continent = cl[5]
 	default:
 		break
+
 	}
+
+	fmt.Println("Choose your Animals, 3 to start:")
+	switch p.Continent.Abr {
+	case "af":
+
+	}
+
+	scanner.Scan()
 
 	return p
 
