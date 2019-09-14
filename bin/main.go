@@ -6,6 +6,7 @@ import (
 	"os"
 )
 
+//PP is a slice of Players
 var PP []player
 
 func main() {

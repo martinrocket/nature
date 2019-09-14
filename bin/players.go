@@ -42,6 +42,7 @@ func players() player {
 	case "sa":
 		p.Continent = cl[5]
 	default:
+		players()
 		break
 
 	}
