@@ -20,14 +20,8 @@ func players() player {
 	scanner.Scan()
 
 	p.Name = scanner.Text()
-	fmt.Println("The following continets are available:")
+	t := chooseContinent()
 	cl := Continents()
-	for i := range cl {
-		fmt.Print(cl[i].Abr + ") " + cl[i].Name + "\n")
-	}
-	fmt.Print("Choose your Contient: \n")
-	scanner.Scan()
-	t := string(scanner.Text())
 	switch t {
 	case "af":
 		p.Continent = cl[0]
@@ -41,9 +35,9 @@ func players() player {
 		p.Continent = cl[4]
 	case "sa":
 		p.Continent = cl[5]
+
 	default:
-		//players()
-		break
+		chooseContinent()
 
 	}
 
@@ -57,4 +51,18 @@ func players() player {
 
 	return p
 
+}
+
+func chooseContinent() string {
+
+	fmt.Println("The following continets are available:")
+	cl := Continents()
+	for i := range cl {
+		fmt.Print(cl[i].Abr + ") " + cl[i].Name + "\n")
+	}
+	scanner := bufio.NewScanner(os.Stdin)
+	fmt.Print("Choose your Contient: \n")
+	scanner.Scan()
+	t := string(scanner.Text())
+	return t
 }
