@@ -10,6 +10,10 @@ import (
 const gameWidth = 60
 var GD []gameData
 
+type gameData struct {
+    gNumber int
+
+}
 func gameStatus(p []player) {
 	clearScreen()
 	gameTop()
