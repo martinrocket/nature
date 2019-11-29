@@ -8,6 +8,7 @@ import (
 )
 
 const gameWidth = 60
+var GD []gameData
 
 func gameStatus(p []player) {
 	clearScreen()
