@@ -1,0 +1,9 @@
+2019/12/08 17:10:33 Log created at: /Users/martinruble/go/src/github.com/martinrocket/nature/logs/20191208_application.log
+2019/12/08 17:10:33 Log Startup....% 2019-12-08 17:10:33.047692 -0700 MST m=+0.000387188
+2019/12/08 17:23:42 Log created at: /Users/martinruble/go/src/github.com/martinrocket/nature/logs/20191208_application.log
+2019/12/08 17:23:42 Log Startup...  2019-12-08 17:23:42.277476 -0700 MST m=+0.000399163
+2019/12/08 17:23:42 ...running nature.
+2019/12/08 17:23:42 Selection of Animal Cards:  [{African Dog d true Africa Dog 10 5 5 5 false false} {Elephant e true Africa Elephantidae 10 10 6 7 false false} {Lion l true Africa Cat 10 9 8 10 false false} {Mountain Gorilla mg true Africa primate 10 10 3 6 false false} {Thompson's Gazelle tg true Africa Bovidea 10 3 10 0 false false}]
+2019/12/08 17:23:47 User selects:  p
+2019/12/08 17:23:55 Selection of Animal Cards:  [{African Dog d true Africa Dog 10 5 5 5 false false} {Elephant e true Africa Elephantidae 10 10 6 7 false false} {Lion l true Africa Cat 10 9 8 10 false false} {Mountain Gorilla mg true Africa primate 10 10 3 6 false false} {Thompson's Gazelle tg true Africa Bovidea 10 3 10 0 false false}]
+2019/12/08 17:23:56 User selects:  x

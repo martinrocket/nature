@@ -3,7 +3,6 @@ package main
 import (
 	"bufio"
 	"fmt"
-	"log"
 	"os"
 )
 
@@ -11,21 +10,15 @@ import (
 var PP []player
 
 func main() {
-	creatLog()
-	startApp()
-}
 
-func startApp() {
-
+	clearScreen()
 	fmt.Println("...running nature.")
-	log.Println("...running nature.")
 	scanner := bufio.NewScanner(os.Stdin) // Scans in Text for user input
 	for {
 
 		gameStatus(PP)
 		fmt.Println("Selection of Animals:")
 		A := readCards()
-		log.Println("Selection of Animal Cards: ", A)
 		l := AnimalList(A)
 		for i := range l {
 			fmt.Println(l[i])
@@ -35,7 +28,6 @@ func startApp() {
 		fmt.Print("Enter Text: ")
 		scanner.Scan()
 		text := scanner.Text()
-		log.Println("User selects: ", text)
 		if len(text) != 0 {
 			fmt.Println(text)
 		}
