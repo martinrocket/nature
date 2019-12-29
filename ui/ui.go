@@ -27,7 +27,7 @@ func Pause() {
 
 //GetInput allows a question with a string return
 func GetInput(s string) string {
-	fmt.Print(s + ": ")
+	fmt.Print(s + ": \n")
 	scanner.Scan()
 	text := scanner.Text()
 	return text

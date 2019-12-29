@@ -1,10 +1,8 @@
 package main
 
 import (
-	"bufio"
 	"fmt"
 	"log"
-	"os"
 	"strconv"
 	"strings"
 
@@ -19,15 +17,11 @@ type player struct {
 
 func addPlayer() player {
 	p := player{}
-	scanner := bufio.NewScanner(os.Stdin) // Scans in Text for user input
-	fmt.Print("Enter your name: \n")
-	scanner.Scan()
-
-	p.Name = scanner.Text()
+	p.Name = ui.GetInput("Enter your name")
 	for {
-
 		t := chooseContinent()
 		cl := Continents()
+
 		switch t {
 		case "af":
 			p.Continent = cl[0]
@@ -59,10 +53,7 @@ func chooseContinent() string {
 	for i := range cl {
 		fmt.Print(cl[i].Abr + ") " + cl[i].Name + "\n")
 	}
-	scanner := bufio.NewScanner(os.Stdin)
-	fmt.Print("Choose your Contient: \n")
-	scanner.Scan()
-	t := string(scanner.Text())
+	t := ui.GetInput("Choose your Continent")
 	return t
 }
 
