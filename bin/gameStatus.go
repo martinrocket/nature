@@ -2,25 +2,27 @@ package main
 
 import (
 	"fmt"
+	"log"
 	"strings"
 
 	"github.com/martinrocket/nature/ui"
 )
 
 const gameWidth = 60
+
 var GD []gameData
 
 type gameData struct {
-    gNumber int
-
+	gNumber int
 }
+
 func gameStatus(p []player) {
 	clearScreen()
 	gameTop()
 	gameContent(p)
+	log.Printf("Call to gameStatus, Logging game content: %v", p)
 	gameBlank()
 	gameBottom()
-	fmt.Println(p)
 
 }
 
