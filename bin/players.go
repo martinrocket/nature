@@ -47,7 +47,6 @@ func addPlayer() player {
 }
 
 func chooseContinent() string {
-
 	fmt.Println("The following continets are available:")
 	cl := Continents()
 	for i := range cl {
@@ -63,12 +62,21 @@ func addAnimalsPlayer(p []player) {
 	for key, value := range p {
 		if a == strconv.Itoa(key) {
 			logPrint("You chose " + value.Name + "\n")
+			playerInfo(value.Name)
 		}
 	}
 	fmt.Printf("Choose from the list of animals.  ")
 	listCards(false)
 	b := ui.GetInput("Choose animal")
 	logPrint("Chose: " + b)
+	for b != "x" {
+		switch b {
+		case "tg":
+			fmt.Printf("%v", b)
+			ui.GetInput("Nice Choice")
+
+		}
+	}
 	ui.Pause()
 
 }
@@ -76,22 +84,37 @@ func addAnimalsPlayer(p []player) {
 func playerListChoice(p []player) {
 	clearScreen()
 	gameTop()
-	playerContent(p)
+	playersContent(p)
 	log.Printf("Call to playerListChoice, Logging game content: %v", p)
 	gameBlank()
 	gameBottom()
 }
 
-func playerContent(p []player) {
+func playersContent(p []player) {
 	l := len(fmt.Sprintf("%v", "Players:"))
 
 	fmt.Print(vLine + bl + fmt.Sprintf("%v", "Players:") + (strings.Repeat(bl, (gameWidth - l - 1))) + vLine + "\n")
 	for i := range p {
-		//l2 := len((p[i].Name + " " + p[i].Continent.Name))
 		num := strconv.Itoa(i) + ": "
 		l1, l2 := ui.LabelLength(1, num, p[i].Name, p[i].Continent.Abr)
-		//name := p[i].Name + " " + p[i].Continent.Name
 		fmt.Print(vLine + bl + fmt.Sprintf("%v", l2) + (strings.Repeat(bl, (gameWidth - l1 - 1))) + vLine + "\n")
 
 	}
+}
+
+func playerInfo(p string) {
+	clearScreen()
+	gameTop()
+	playerInfoDisplay(p)
+	log.Printf("Call to playerListChoice, Logging game content: %v", p)
+	gameBlank()
+	gameBottom()
+}
+
+func playerInfoDisplay(p string) {
+	l := len(fmt.Sprintf("%v", "Player Info:"))
+	fmt.Print(vLine + bl + fmt.Sprintf("%v", "Player Info:") + (strings.Repeat(bl, (gameWidth - l - 1))) + vLine + "\n")
+	l1, l2 := ui.LabelLength(1, p)
+	fmt.Print(vLine + bl + fmt.Sprintf("%v", l2) + (strings.Repeat(bl, (gameWidth - l1 - 1))) + vLine + "\n")
+
 }

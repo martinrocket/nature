@@ -440,3 +440,31 @@
 2019/12/28 19:02:53 Chose: e
 2019/12/28 19:02:54 Call to gameStatus, Logging game content: [{Martin Ruble {South America sa} []} {Jana Miller {North America na} []}]
 2019/12/28 19:03:01 call to Scanner.Text, User selects:  x
+2019/12/28 19:05:30 Log created at: /Users/martinruble/go/src/github.com/martinrocket/nature/logs/20191228_application.log
+2019/12/28 19:05:30 Log Startup...  2019-12-28 19:05:30.209176 -0700 MST m=+0.000349626
+2019/12/28 19:05:30 Starting nature...
+2019/12/28 19:05:30 Call to gameStatus, Logging game content: []
+2019/12/28 19:05:34 call to Scanner.Text, User selects:  ac
+2019/12/28 19:05:34 Call to gameStatus, Logging game content: []
+2019/12/28 19:05:37 call to Scanner.Text, User selects:  rc
+2019/12/28 19:05:37 Call to gameStatus, Logging game content: []
+2019/12/28 19:05:39 call to Scanner.Text, User selects:  dc
+2019/12/28 19:05:39 Call to readCards, Selection of Animal Cards:  [{African Dog d true Africa Dog 10 5 5 5 false false} {Elephant e true Africa Elephantidae 10 10 6 7 false false} {Lion l true Africa Cat 10 9 8 10 false false} {Mountain Gorilla mg true Africa primate 10 10 3 6 false false} {Thompson's Gazelle tg true Africa Bovidea 10 3 10 0 false false}]
+2019/12/28 19:05:43 Call to gameStatus, Logging game content: []
+2019/12/28 19:06:27 call to Scanner.Text, User selects:  AP
+2019/12/28 19:06:33 Added Player, player list: [{Jana Miller {Asia as} []}]
+2019/12/28 19:06:33 Call to gameStatus, Logging game content: [{Jana Miller {Asia as} []}]
+2019/12/28 19:06:36 call to Scanner.Text, User selects:  ap
+2019/12/28 19:06:40 Added Player, player list: [{Jana Miller {Asia as} []} {Suger Miller {Australia au} []}]
+2019/12/28 19:06:40 Call to gameStatus, Logging game content: [{Jana Miller {Asia as} []} {Suger Miller {Australia au} []}]
+2019/12/28 19:06:42 call to Scanner.Text, User selects:  ap
+2019/12/28 19:06:46 Added Player, player list: [{Jana Miller {Asia as} []} {Suger Miller {Australia au} []} {Martin Ruble {North America na} []}]
+2019/12/28 19:06:46 Call to gameStatus, Logging game content: [{Jana Miller {Asia as} []} {Suger Miller {Australia au} []} {Martin Ruble {North America na} []}]
+2019/12/28 19:06:54 call to Scanner.Text, User selects:  AA
+2019/12/28 19:06:54 Call to playerListChoice, Logging game content: [{Jana Miller {Asia as} []} {Suger Miller {Australia au} []} {Martin Ruble {North America na} []}]
+2019/12/28 19:06:56 You chose Suger Miller
+
+2019/12/28 19:06:56 Call to readCards, Selection of Animal Cards:  [{African Dog d true Africa Dog 10 5 5 5 false false} {Elephant e true Africa Elephantidae 10 10 6 7 false false} {Lion l true Africa Cat 10 9 8 10 false false} {Mountain Gorilla mg true Africa primate 10 10 3 6 false false} {Thompson's Gazelle tg true Africa Bovidea 10 3 10 0 false false}]
+2019/12/28 19:07:04 Chose: d
+2019/12/28 19:07:07 Call to gameStatus, Logging game content: [{Jana Miller {Asia as} []} {Suger Miller {Australia au} []} {Martin Ruble {North America na} []}]
+2019/12/29 09:54:11 call to Scanner.Text, User selects:  x

@@ -28,12 +28,9 @@ func gameStatus(p []player) {
 
 func gameContent(p []player) {
 	l := len(fmt.Sprintf("%v", "Game Status"))
-
 	fmt.Print(vLine + bl + fmt.Sprintf("%v", "Game Status") + (strings.Repeat(bl, (gameWidth - l - 1))) + vLine + "\n")
 	for i := range p {
-		//l2 := len((p[i].Name + " " + p[i].Continent.Name))
 		l1, l2 := ui.LabelLength(4, p[i].Name, p[i].Continent.Name)
-		//name := p[i].Name + " " + p[i].Continent.Name
 		fmt.Print(vLine + bl + fmt.Sprintf("%v", l2) + (strings.Repeat(bl, (gameWidth - l1 - 1))) + vLine + "\n")
 
 	}

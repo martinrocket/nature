@@ -1,0 +1,28 @@
+2019/12/30 10:18:10 Log created at: /Users/martinruble/go/src/github.com/martinrocket/nature/logs/20191230_application.log
+2019/12/30 10:18:10 Log Startup...  2019-12-30 10:18:10.996316 -0700 MST m=+0.000406638
+2019/12/30 10:18:10 Starting nature...
+2019/12/30 10:18:10 Call to gameStatus, Logging game content: []
+2019/12/30 10:18:13 call to Scanner.Text, User selects:  ap
+2019/12/30 10:18:16 Added Player, player list: [{Martin Ruble {Australia au} []}]
+2019/12/30 10:18:16 Call to gameStatus, Logging game content: [{Martin Ruble {Australia au} []}]
+2019/12/30 10:18:18 call to Scanner.Text, User selects:  aa
+2019/12/30 10:18:18 Call to playerListChoice, Logging game content: [{Martin Ruble {Australia au} []}]
+2019/12/30 10:18:20 You chose Martin Ruble
+
+2019/12/30 10:18:20 Call to playerListChoice, Logging game content: Martin Ruble
+2019/12/30 10:18:20 Call to readCards, Selection of Animal Cards:  [{African Dog d true Africa Dog 10 5 5 5 false false} {Elephant e true Africa Elephantidae 10 10 6 7 false false} {Lion l true Africa Cat 10 9 8 10 false false} {Mountain Gorilla mg true Africa primate 10 10 3 6 false false} {Thompson's Gazelle tg true Africa Bovidea 10 3 10 0 false false}]
+2019/12/30 10:18:26 Chose: 
+2019/12/30 12:58:02 Log created at: /Users/martinruble/go/src/github.com/martinrocket/nature/logs/20191230_application.log
+2019/12/30 12:58:02 Log Startup...  2019-12-30 12:58:02.522288 -0700 MST m=+0.000492306
+2019/12/30 12:58:02 Starting nature...
+2019/12/30 12:58:02 Call to gameStatus, Logging game content: []
+2019/12/30 12:58:03 call to Scanner.Text, User selects:  ap
+2019/12/30 12:58:09 Added Player, player list: [{Sugar Miller {Australia au} []}]
+2019/12/30 12:58:09 Call to gameStatus, Logging game content: [{Sugar Miller {Australia au} []}]
+2019/12/30 12:58:10 call to Scanner.Text, User selects:  aa
+2019/12/30 12:58:10 Call to playerListChoice, Logging game content: [{Sugar Miller {Australia au} []}]
+2019/12/30 12:58:12 You chose Sugar Miller
+
+2019/12/30 12:58:12 Call to playerListChoice, Logging game content: Sugar Miller
+2019/12/30 12:58:12 Call to readCards, Selection of Animal Cards:  [{African Dog d true Africa Dog 10 5 5 5 false false} {Elephant e true Africa Elephantidae 10 10 6 7 false false} {Lion l true Africa Cat 10 9 8 10 false false} {Mountain Gorilla mg true Africa primate 10 10 3 6 false false} {Thompson's Gazelle tg true Africa Bovidea 10 3 10 0 false false}]
+2019/12/30 12:58:18 Chose: l
