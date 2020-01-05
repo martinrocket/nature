@@ -68,19 +68,23 @@ func addAnimalsPlayer(p []player) {
 	fmt.Printf("Choose from the list of animals.  ")
 	listCards(false)
 	b := ui.GetInput("Choose animal")
+	b = strings.ToLower(b)
 	logPrint("Chose: " + b)
-	for b != "x" {
+	for {
 		switch b {
 		case "tg":
-			fmt.Printf("%v", b)
+			fmt.Printf("%v \n", b)
 			ui.GetInput("Nice Choice")
+			return
+		case "x":
+			return
 
 		}
 	}
 	ui.Pause()
+	return
 
 }
-
 func playerListChoice(p []player) {
 	clearScreen()
 	gameTop()

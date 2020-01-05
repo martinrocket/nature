@@ -1,0 +1,32 @@
+2020/01/05 16:51:24 Log created at: /Users/martinruble/go/src/github.com/martinrocket/nature/logs/20200105_application.log
+2020/01/05 16:51:24 Log Startup...  2020-01-05 16:51:24.330642 -0700 MST m=+0.000332730
+2020/01/05 16:51:24 Starting nature...
+2020/01/05 16:51:24 Call to gameStatus, Logging game content: []
+2020/01/05 16:51:26 call to Scanner.Text, User selects:  ap
+2020/01/05 16:51:29 Added Player, player list: [{Jana  {Asia as} []}]
+2020/01/05 16:51:29 Call to gameStatus, Logging game content: [{Jana  {Asia as} []}]
+2020/01/05 16:51:31 call to Scanner.Text, User selects:  aa
+2020/01/05 16:51:31 Call to playerListChoice, Logging game content: [{Jana  {Asia as} []}]
+2020/01/05 16:51:32 You chose Jana 
+
+2020/01/05 16:51:32 Call to playerListChoice, Logging game content: Jana 
+2020/01/05 16:51:32 Call to readCards, Selection of Animal Cards:  [{African Dog d true Africa Dog 10 5 5 5 false false} {Elephant e true Africa Elephantidae 10 10 6 7 false false} {Lion l true Africa Cat 10 9 8 10 false false} {Mountain Gorilla mg true Africa primate 10 10 3 6 false false} {Thompson's Gazelle tg true Africa Bovidea 10 3 10 0 false false}]
+2020/01/05 16:51:35 Chose: tg
+2020/01/05 16:51:40 Call to gameStatus, Logging game content: [{Jana  {Asia as} []}]
+2020/01/05 16:51:41 call to Scanner.Text, User selects:  x
+2020/01/05 16:52:33 Log created at: /Users/martinruble/go/src/github.com/martinrocket/nature/logs/20200105_application.log
+2020/01/05 16:52:33 Log Startup...  2020-01-05 16:52:33.687872 -0700 MST m=+0.000359842
+2020/01/05 16:52:33 Starting nature...
+2020/01/05 16:52:33 Call to gameStatus, Logging game content: []
+2020/01/05 16:52:35 call to Scanner.Text, User selects:  ap
+2020/01/05 16:52:38 Added Player, player list: [{Jana {Asia as} []}]
+2020/01/05 16:52:38 Call to gameStatus, Logging game content: [{Jana {Asia as} []}]
+2020/01/05 16:52:39 call to Scanner.Text, User selects:  aa
+2020/01/05 16:52:39 Call to playerListChoice, Logging game content: [{Jana {Asia as} []}]
+2020/01/05 16:52:40 You chose Jana
+
+2020/01/05 16:52:40 Call to playerListChoice, Logging game content: Jana
+2020/01/05 16:52:40 Call to readCards, Selection of Animal Cards:  [{African Dog d true Africa Dog 10 5 5 5 false false} {Elephant e true Africa Elephantidae 10 10 6 7 false false} {Lion l true Africa Cat 10 9 8 10 false false} {Mountain Gorilla mg true Africa primate 10 10 3 6 false false} {Thompson's Gazelle tg true Africa Bovidea 10 3 10 0 false false}]
+2020/01/05 16:52:42 Chose: tg
+2020/01/05 16:52:45 Call to gameStatus, Logging game content: [{Jana {Asia as} []}]
+2020/01/05 16:52:46 call to Scanner.Text, User selects:  x

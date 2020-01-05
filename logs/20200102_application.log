@@ -84,3 +84,17 @@
 2020/01/02 17:20:56 Chose: x
 2020/01/02 17:20:57 Call to gameStatus, Logging game content: [{mr {Asia as} []}]
 2020/01/02 17:21:14 call to Scanner.Text, User selects:  x
+2020/01/02 17:24:15 Log created at: /Users/martinruble/go/src/github.com/martinrocket/nature/logs/20200102_application.log
+2020/01/02 17:24:15 Log Startup...  2020-01-02 17:24:15.620247 -0700 MST m=+0.000494744
+2020/01/02 17:24:15 Starting nature...
+2020/01/02 17:24:15 Call to gameStatus, Logging game content: []
+2020/01/02 17:24:18 call to Scanner.Text, User selects:  ap
+2020/01/02 17:24:20 Added Player, player list: [{j {Asia as} []}]
+2020/01/02 17:24:20 Call to gameStatus, Logging game content: [{j {Asia as} []}]
+2020/01/02 17:24:21 call to Scanner.Text, User selects:  aa
+2020/01/02 17:24:21 Call to playerListChoice, Logging game content: [{j {Asia as} []}]
+2020/01/02 17:24:25 You chose j
+
+2020/01/02 17:24:25 Call to playerListChoice, Logging game content: j
+2020/01/02 17:24:25 Call to readCards, Selection of Animal Cards:  [{African Dog d true Africa Dog 10 5 5 5 false false} {Elephant e true Africa Elephantidae 10 10 6 7 false false} {Lion l true Africa Cat 10 9 8 10 false false} {Mountain Gorilla mg true Africa primate 10 10 3 6 false false} {Thompson's Gazelle tg true Africa Bovidea 10 3 10 0 false false}]
+2020/01/02 17:24:28 Chose: X
