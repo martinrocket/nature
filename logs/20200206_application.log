@@ -1,0 +1,5 @@
+2020/02/06 14:10:23 Log created at: /Users/martinruble/go/src/github.com/martinrocket/nature/logs/20200206_application.log
+2020/02/06 14:10:23 Log Startup...  2020-02-06 14:10:23.986698 -0700 MST m=+0.001862161
+2020/02/06 14:10:23 Starting nature...
+2020/02/06 14:10:23 Call to gameStatus, Logging game content: []
+2020/02/06 14:10:29 call to Scanner.Text, User selects:  x
